@@ -1,7 +1,7 @@
 %% This file contains the references to the sources
 %% of the code and data stored in this repository in BibTex format.
 
-%% Reference of Scikit-learn.
+%% Reference for Scikit-learn.
 @article{scikit-learn,
  title={Scikit-learn: Machine Learning in {P}ython},
  author={Pedregosa, F. and Varoquaux, G. and Gramfort, A. and Michel, V.
@@ -14,7 +14,7 @@
  year={2011}
 }
 
-%% Reference of text data used for classification.
+%% Reference for text data used for classification.
 @inproceedings{opensubtitles2016,
 author={Pierre Lison and J{\"o}rg Tiedemann},
 title={OpenSubtitles2016: Extracting Large Parallel Corpora from Movie and TV Subtitles},
