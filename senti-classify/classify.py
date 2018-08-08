@@ -114,6 +114,7 @@ def stratified_cross_validate(model, dims, lang):
 
     skf = StratifiedKFold(n_splits=10, shuffle=True)
 
+    # Structure for storing evaluation scores in lists from https://gist.github.com/zacstewart/5978000
     prec = []
     rec = []
     f1 = []
@@ -145,9 +146,10 @@ def stratified_cross_validate(model, dims, lang):
         cm = confusion_matrix(y_test, y_tags)
         confusion += cm
 
-    print('Avg precision: ', sum(prec)/len(prec))
-    print('Avg recall: ', sum(rec)/len(rec))
-    print('Avg F1-score: ', sum(f1)/len(f1))
+    # Avgs modified from https://github.com/sri-teja/chemical-NER/blob/master/kfold.py
+    print('Average precision: ', sum(prec)/len(prec))
+    print('Average recall: ', sum(rec)/len(rec))
+    print('Average F1-score: ', sum(f1)/len(f1))
 
     print('Confusion matrix using stratified 10-fold cross-validation: ')
     print(confusion)
