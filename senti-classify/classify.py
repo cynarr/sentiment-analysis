@@ -2,6 +2,26 @@
 # This code implements sentiment classification using the Scikit-learn machine learning toolkit for Python:
 # Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011.
 
+# Sentiment classification of parallel sentence data in English (original), Finnish, French, or Italian (translations).
+
+# Run this script to classify the data using:
+# - Pre-compiled training and testing sets (90%/10%)
+# - Stratified 10-fold cross-validation
+# - Scikit-learn train_test_split (90%/10%)
+
+# The data is classified using the following classifiers:
+# - Multinomial Naïve Bayes
+# - Logistic Regression
+# - Linear SVC
+# - Multilayer Perceptron
+
+# Usage: python3 classify.py <LANG> <DIMENSIONS>
+# Arguments:
+# - <LANG>: en / fi / fr / it
+# - <DIMENSIONS>: bin / multi
+#    - bin: positive/negative
+#    - multi: 8-class classification into classes: anger/anticipation/disgust/fear/joy/sadness/surprise/trust (Plutchik's Eight)
+
 import codecs
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
