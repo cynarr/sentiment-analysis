@@ -114,7 +114,7 @@ def stratified_cross_validate(model, dims, lang):
 
     skf = StratifiedKFold(n_splits=10, shuffle=True)
 
-    # Structure for storing evaluation scores in lists from https://gist.github.com/zacstewart/5978000
+    # Structure for storing evaluation scores in lists modified from https://gist.github.com/zacstewart/5978000
     prec = []
     rec = []
     f1 = []
