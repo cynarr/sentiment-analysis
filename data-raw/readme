@@ -1,9 +1,16 @@
 This directory contains the data used in this project organized by:
-    - classification type: bin / multi
-    - language: en / fi / fr / it
+	- classification type: bin / multi
+	- language: en / fi / fr / it
     
 With the multi-dimensional classification data for each translated language, OPUS corpus sentence alignments between English and
 that language are included for both training and testing sets in each the /ids/ directory.
 
-The /ids/ directory for English contains the source document of each sentence. As there are misalignments in the original corpus files,
-some of those misalignments are likely to have been carried over to these files.
+The /ids/ directory for English contains the source document of each sentence.
+
+As there are misalignments in the original corpus files, some of those misalignments are likely to have been carried over to these files.
+Additionally, some misalignments may have shown up in the data preprocessing.
+
+Known alignment issues:
+
+	- A few lines at the end of each Italian and French alignment file seem misaligned (probable cause: error in preprocessing for this project)
+	- A few lines here and there in the English and Finnish alignment files are misaligned (probable cause: error in corpus source)
