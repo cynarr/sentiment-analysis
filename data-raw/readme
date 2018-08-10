@@ -12,5 +12,5 @@ Additionally, some misalignments may have shown up in the data preprocessing.
 
 Known alignment issues:
 
-	- A few lines at the end of each Italian and French alignment file seem misaligned (probable cause: error in preprocessing for this project)
+	- A few lines at the end of some Italian and French alignment files seem misaligned (probable cause: error in preprocessing for this project)
 	- A few lines here and there in the English and Finnish alignment files are misaligned (probable cause: error in corpus source)
