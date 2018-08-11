@@ -3,7 +3,7 @@ This directory contains the data used in this project organized by:
 	- language: en / fi / fr / it
     
 With the multi-dimensional classification data for each translated language, OPUS corpus sentence alignments between English and
-that language are included for both training and testing sets in each the /ids/ directory.
+that language are included for both training and testing sets in each /ids/ directory.
 
 The /ids/ directory for English contains the source document of each sentence.
 
@@ -14,3 +14,4 @@ Known alignment issues:
 
 	- A few lines at the end of some Italian and French alignment files seem misaligned (probable cause: error in preprocessing for this project)
 	- A few lines here and there in the English and Finnish alignment files are misaligned (probable cause: error in corpus source)
+		- ^ The OPUS corpus misalignments may also affect the French and Italian alignments
