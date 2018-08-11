@@ -1,0 +1,7 @@
+This directory contains the preliminary/development datasets for Finnish, French, and Italian.
+
+The data is compiled by extracting the sentences for which both annotators agreed that the sentiment was preserved. This yields a
+dataset with 100% inter-annotator agreement on sentiment preservation in the scope of this project.
+
+The data can be used as a preliminary/development set for compiling larger datasets for sentence-level sentiment classification. For
+example, this data may serve as a seed sentence set.
