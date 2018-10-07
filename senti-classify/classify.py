@@ -147,9 +147,17 @@ def stratified_cross_validate(model, dims, lang):
         confusion += cm
 
     # Avgs modified from https://github.com/sri-teja/chemical-NER/blob/master/kfold.py
-    print('Average precision: ', sum(prec)/len(prec))
-    print('Average recall: ', sum(rec)/len(rec))
-    print('Average F1-score: ', sum(f1)/len(f1))
+    avg_prec = sum(prec) / len(prec)
+    avg_rec = sum(rec)/len(rec)
+    avg_f1 = sum(f1)/len(f1)
+
+    print('Average precision: ', avg_prec)
+    print('Average recall: ', avg_rec)
+    print('Average F1-score: ', avg_f1)
+
+    print('Precision standard deviation: ', avg_prec.std())
+    print('Recall standard deviation: ', avg_rec.std())
+    print('F1-score standard deviation: ', avg_f1.std())
 
     print('Confusion matrix using stratified 10-fold cross-validation: ')
     print(confusion)
